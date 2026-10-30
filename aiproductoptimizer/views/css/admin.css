@@ -1,0 +1,273 @@
+/**
+ * AI Product Optimizer - Estilos Admin
+ * @author    OKVIKI <https://okviki.com>
+ */
+
+#ai-product-optimizer {
+    margin-top: 20px;
+}
+
+#ai-product-optimizer .panel-heading {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-weight: 600;
+}
+
+#ai-product-optimizer .panel-heading .badge {
+    background: rgba(255,255,255,0.2);
+    margin-left: 10px;
+}
+
+#ai-loading {
+    padding: 40px;
+}
+
+#ai-loading .icon-spinner {
+    color: #667eea;
+}
+
+.ai-field-group {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.ai-field-group:last-child {
+    border-bottom: none;
+}
+
+.ai-field-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.ai-field-header .badge {
+    font-size: 11px;
+    padding: 4px 8px;
+}
+
+.ai-field-header .btn-regenerate {
+    padding: 2px 6px;
+    font-size: 10px;
+}
+
+.ai-optimized-field {
+    border-color: #28a745;
+    background-color: #f8fff9;
+}
+
+.ai-optimized-field:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+.char-count {
+    display: block;
+    text-align: right;
+    font-size: 11px;
+    color: #999;
+    margin-top: 4px;
+}
+
+.char-count.text-warning {
+    color: #ffc107 !important;
+}
+
+.char-count.text-danger {
+    color: #dc3545 !important;
+}
+
+#ai-suggested-keywords .label {
+    display: inline-block;
+    margin: 2px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+#btn-optimize-all {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    padding: 10px 25px;
+}
+
+#btn-optimize-all:hover {
+    background: linear-gradient(135deg, #5a6fd6 0%, #6a4190 100%);
+}
+
+#btn-apply-all {
+    padding: 12px 30px;
+}
+
+/* Filtros panel */
+#filters-panel {
+    background: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+}
+
+#filters-panel .form-group {
+    margin-bottom: 0;
+}
+
+#filters-panel label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #666;
+}
+
+/* Tabla de productos */
+#products-table {
+    margin-bottom: 0;
+}
+
+#products-table thead th {
+    background: #f5f5f5;
+    border-bottom: 2px solid #ddd;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+#products-table tbody tr:hover {
+    background-color: #f0f7ff;
+}
+
+#products-table .label {
+    font-weight: normal;
+}
+
+.optimized-badge {
+    cursor: help;
+}
+
+/* Loading overlay */
+#table-loading {
+    background: rgba(255,255,255,0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
+#table-container {
+    position: relative;
+    min-height: 200px;
+}
+
+/* Paginación */
+.pagination {
+    margin: 0;
+}
+
+.pagination > li > a {
+    color: #667eea;
+}
+
+.pagination > .active > a,
+.pagination > .active > a:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-color: #667eea;
+}
+
+.pagination-info {
+    line-height: 34px;
+    margin: 0;
+}
+
+/* Modal de previsualización */
+#preview-modal .modal-body {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+#preview-modal .table {
+    margin-bottom: 15px;
+}
+
+#preview-modal .table td {
+    vertical-align: middle;
+    word-break: break-word;
+}
+
+#preview-modal .text-success {
+    color: #28a745 !important;
+    font-weight: 500;
+}
+
+/* Progress bar */
+#bulk-progress {
+    margin: 20px 0;
+}
+
+#bulk-progress .progress {
+    height: 25px;
+    border-radius: 15px;
+}
+
+#bulk-progress .progress-bar {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    line-height: 25px;
+    font-weight: 600;
+}
+
+/* Notificaciones flotantes */
+.alert-dismissible {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Checkbox group */
+.checkbox-group {
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 4px;
+}
+
+.checkbox-group .checkbox-inline {
+    margin-right: 20px;
+}
+
+/* Alert personalizado */
+.alert-info {
+    background: linear-gradient(135deg, #e8f4fd 0%, #f0e8fd 100%);
+    border: 1px solid #667eea;
+    color: #4a4a4a;
+}
+
+.alert-info i {
+    color: #667eea;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    #filters-panel .col-lg-2,
+    #filters-panel .col-lg-3 {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .ai-field-group .col-lg-5 {
+        margin-bottom: 15px;
+    }
+}
+
+/* Utilidades */
+.mb-3 {
+    margin-bottom: 15px !important;
+}
+
+.mr-1 {
+    margin-right: 5px !important;
+}
+
+/* Animaciones */
+.icon-spin {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
